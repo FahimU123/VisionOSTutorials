@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Example032: View {
+struct rotatation3DEffect: View {
     @State private var isActive = false
     @State private var showWindow = true
     var body: some View {
@@ -73,5 +73,5 @@ struct Example032: View {
 }
 
 #Preview {
-    Example032()
+    rotatation3DEffect()
 }

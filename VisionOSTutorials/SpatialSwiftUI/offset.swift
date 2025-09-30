@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Example030: View {
+struct offset: View {
     @State private var showOffset = false
     var body: some View {
         VStack(spacing: 24) {
@@ -37,5 +37,5 @@ struct Example030: View {
 }
 
 #Preview {
-    Example030()
+    offset()
 }

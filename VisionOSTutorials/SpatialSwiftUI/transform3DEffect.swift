@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Example033: View {
+struct transform3DEffect: View {
     @State fileprivate var transformMode: TransformType = .none
     var body: some View {
         HStack() {
@@ -40,7 +40,7 @@ struct Example033: View {
 }
 
 #Preview {
-    Example033()
+    transform3DEffect()
 }
 
 
