@@ -9,6 +9,7 @@ import SwiftUI
 import RealityKit
 import RealityKitContent
 
+
 struct Attachments: View {
     var body: some View {
         RealityView { content, attachments in
