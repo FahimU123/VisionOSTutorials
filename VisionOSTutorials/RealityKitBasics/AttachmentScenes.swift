@@ -13,14 +13,20 @@ struct AttachmentScenes: View {
     var body: some View {
         RealityView { content, attachment in
             // This loads all the 3D assets
-            guard let scene = try? await Entity(named: "Caution", in: realityKitContentBundle) else { return }
+            guard let scene = try? await Entity(named: "Materials", in: realityKitContentBundle) else { return }
             content.add(scene)
             
             // Example 01
             // We search for the specific entity and attachment, get a refernce to it then link them by having the attachment be a child
             // Now they move, rotate and even scale in unison
-            if let wetFloorSIgn = scene.findEntity(named: "wet_floor_sign"),
-               let wetFloorAttachment = attachment.entity(for: "wet_floor_attachment") {
+            if let wetFloorSIgn = scene.findEntity(named: "wet_floor_sign") {
+                
+                // Diffent way to add attachments besides the closure
+                // Main benefit, this treats attachmnets liek Entities enabling all the same features to attachments that entites have had. Equity
+                let wetFloorAttachment = Entity()
+                let attachment = ViewAttachmentComponent(rootView: WetFloorSignView())
+                wetFloorAttachment.components.set(attachment)
+                
                 wetFloorSIgn.addChild(wetFloorAttachment)
                 
                 // Transform is a super comprehensive way to set poistion, it handles scale, rotation, and trasnlation which is basically position as you xan see
@@ -88,4 +94,13 @@ struct AttachmentScenes: View {
 
 #Preview {
     AttachmentScenes()
+}
+
+fileprivate struct WetFloorSignView: View {
+    var body: some View {
+        VStack(spacing: 24) {
+            Text("CAUTION")
+                .font(.largeTitle)
+        }
+    }
 }

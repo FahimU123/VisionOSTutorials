@@ -10,7 +10,7 @@ import SwiftUI
 
 struct RealityUpdates: View {
     @State private var showSphere = true
-    @State var subject: Entity = {
+    @State private var subject: Entity = {
         let mat = SimpleMaterial(color: .green, roughness: 0.2, isMetallic: false)
         let spehre = ModelEntity(
             mesh: .generateSphere(radius: 0.1),

@@ -1,0 +1,188 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["GridMaterial", "Sphere"]
+    rel material:binding = None (
+        bindMaterialAs = "weakerThanDescendants"
+    )
+
+    def Sphere "Sphere" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+    )
+    {
+        rel material:binding = </Root/GridMaterial/GridMaterial> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        double radius = 0.05
+        quatf xformOp:orient = (1, 0, 0, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0.0004)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def RealityKitComponent "Collider"
+        {
+            uint group = 1
+            uniform token info:id = "RealityKit.Collider"
+            uint mask = 4294967295
+            token type = "Default"
+
+            def RealityKitStruct "Shape"
+            {
+                float3 extent = (0.2, 0.2, 0.2)
+                float radius = 0.05
+                token shapeType = "Sphere"
+            }
+        }
+
+        def RealityKitComponent "InputTarget"
+        {
+            uniform token info:id = "RealityKit.InputTarget"
+        }
+    }
+
+    def "GridMaterial" (
+        active = true
+        references = None
+    )
+    {
+        float3 xformOp:scale = (1, 1, 1)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "ToyCar_1" (
+        active = true
+        prepend references = @Materials/ToyCar.usdz@
+    )
+    {
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0.32930735, -2.9802322e-8, 0.047618754)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def RealityKitComponent "Collider"
+        {
+            uint group = 1
+            uniform token info:id = "RealityKit.Collider"
+            uint mask = 4294967295
+            token type = "Default"
+
+            def RealityKitStruct "Shape"
+            {
+                float3 extent = (0.12440349, 0.116056755, 0.313117)
+                token shapeType = "Box"
+
+                def RealityKitStruct "pose"
+                {
+                    float3 position = (3.7252903e-9, 0.058028363, 0)
+                }
+            }
+        }
+
+        def RealityKitComponent "InputTarget"
+        {
+            uniform token info:id = "RealityKit.InputTarget"
+        }
+
+        over "geom"
+        {
+            over "realistic"
+            {
+                over "materials"
+                {
+                    over "toy_car_realistic_mat"
+                    {
+                        string inputs:file7:varname (
+                            customData = {
+                                dictionary realitykit = {
+                                    float2 positionInSubgraph = (316.625, 1028)
+                                }
+                            }
+                        )
+                        string inputs:file8:varname (
+                            customData = {
+                                dictionary realitykit = {
+                                    float2 positionInSubgraph = (530.125, 1028)
+                                }
+                            }
+                        )
+                        string inputs:file9:varname (
+                            customData = {
+                                dictionary realitykit = {
+                                    float2 positionInSubgraph = (743.125, 1028)
+                                }
+                            }
+                        )
+                        string inputs:file10:varname (
+                            customData = {
+                                dictionary realitykit = {
+                                    float2 positionInSubgraph = (962.625, 1028)
+                                }
+                            }
+                        )
+                        string inputs:file11:varname (
+                            customData = {
+                                dictionary realitykit = {
+                                    float2 positionInSubgraph = (1179.625, 1028)
+                                }
+                            }
+                        )
+                        token outputs:realitykit:vertex
+                        float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (1410.75, 388.5)
+
+                        over "file9_mtlx"
+                        {
+                            float2 ui:nodegraph:node:pos = (621.5, 669.5)
+                        }
+
+                        over "file10_mtlx"
+                        {
+                            float2 ui:nodegraph:node:pos = (350, 840)
+                        }
+
+                        over "file7_mtlx"
+                        {
+                            float2 ui:nodegraph:node:pos = (888.75, 499)
+                        }
+
+                        over "file8_mtlx"
+                        {
+                            float2 ui:nodegraph:node:pos = (621.5, 328.5)
+                        }
+
+                        over "file11_mtlx"
+                        {
+                            float2 ui:nodegraph:node:pos = (350, 100.5)
+                        }
+
+                        over "Lookup_st"
+                        {
+                            float2 ui:nodegraph:node:pos = (91, 479)
+                        }
+
+                        over "file11_mtlx_scale"
+                        {
+                            float2 ui:nodegraph:node:pos = (621.5, 100.5)
+                        }
+
+                        over "file11_mtlx_offset"
+                        {
+                            float2 ui:nodegraph:node:pos = (888.75, 100.5)
+                        }
+
+                        over "toy_car_realistic_01_mat_mtlx"
+                        {
+                            float2 ui:nodegraph:node:pos = (1157.5, 388.5)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
