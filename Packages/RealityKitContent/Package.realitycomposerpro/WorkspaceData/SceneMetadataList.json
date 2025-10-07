@@ -8,6 +8,15 @@
     "objectMetadataList" : [
       [
         "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
+        "Root",
+        "Sphere"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
         "Root"
       ],
       {
@@ -22,11 +31,14 @@
       {
         "isExpanded" : true,
         "isLocked" : false
-      },
+      }
+    ]
+  },
+  "0B728EBA-2582-4E52-AA02-A16782E13CC1" : {
+    "objectMetadataList" : [
       [
-        "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
-        "Root",
-        "Sphere"
+        "0B728EBA-2582-4E52-AA02-A16782E13CC1",
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -44,11 +56,36 @@
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
-        "ToyCar_1"
+        "ToyCar",
+        "geom",
+        "realistic",
+        "materials"
       ],
       {
         "isExpanded" : true,
-        "isLocked" : true
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "ToyCar",
+        "geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "Toy_Car",
+        "geom",
+        "realistic",
+        "materials"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
       },
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
@@ -62,29 +99,28 @@
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
-        "Toy_Car",
-        "geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "ToyCar",
-        "geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
         "ToyCar",
         "geom",
         "realistic"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "ToyCar_1"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : true
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "Toy_Car",
+        "geom"
       ],
       {
         "isExpanded" : true,
@@ -104,30 +140,6 @@
         "Toy_Car",
         "geom",
         "realistic"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "Toy_Car",
-        "geom",
-        "realistic",
-        "materials"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "ToyCar",
-        "geom",
-        "realistic",
-        "materials"
       ],
       {
         "isExpanded" : true,
