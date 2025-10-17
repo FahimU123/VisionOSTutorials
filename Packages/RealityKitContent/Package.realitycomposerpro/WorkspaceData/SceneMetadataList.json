@@ -8,15 +8,6 @@
     "objectMetadataList" : [
       [
         "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
-        "Root",
-        "Sphere"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
         "Root"
       ],
       {
@@ -27,6 +18,15 @@
         "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
         "Root",
         "GridMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "0A9B4653-B11E-4D6A-850E-C6FCB621626C",
+        "Root",
+        "Sphere"
       ],
       {
         "isExpanded" : true,
@@ -67,9 +67,7 @@
       },
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root",
-        "ToyCar",
-        "geom"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -90,7 +88,9 @@
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
-        "GridMaterial"
+        "ToyCar",
+        "geom",
+        "realistic"
       ],
       {
         "isExpanded" : true,
@@ -100,8 +100,17 @@
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
         "ToyCar",
-        "geom",
-        "realistic"
+        "geom"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
+        "Root",
+        "Toy_Car",
+        "geom"
       ],
       {
         "isExpanded" : true,
@@ -119,16 +128,7 @@
       [
         "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
         "Root",
-        "Toy_Car",
-        "geom"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "26DBAE76-5DD8-47B6-A085-1B4ADA111097",
-        "Root"
+        "GridMaterial"
       ],
       {
         "isExpanded" : true,

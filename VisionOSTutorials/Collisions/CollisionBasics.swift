@@ -57,6 +57,7 @@ struct CollisionBasics: View {
                 }
             }
         } attachments: {
+            
             Attachment(id: "Example01") {
                 Text("Collision + Input")
                     .font(.title)
